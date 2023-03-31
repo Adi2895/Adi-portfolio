@@ -1,0 +1,19 @@
+.myName {
+
+  font-family:'Alkatra', cursive;
+  animation-duration: 4s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slidein {
+0% {
+  margin-left: 0%;
+}
+50% {
+  margin-left: 90px;
+}
+100% {
+  margin-left: 0%;
+}
+}
