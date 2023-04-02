@@ -14,7 +14,7 @@ export default function Navbar() {
 
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" >
 
-                <Link className="navbar-brand" href="#">Aditya</Link>
+                <Link className="navbar-brand mx-4" href="#">Aditya</Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -22,31 +22,28 @@ export default function Navbar() {
                     <ul className="navbar-nav mr-auto mt-2 mt-lg-0" >
 
                         <li className="nav-item">
-                            <Link className="nav-link" href="#">About</Link>
+                            <Link className="nav-link mx-4" href="#">About</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" href="#">Tech</Link>
+                            <Link className="nav-link mx-4" href="#">Tech</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" href="#">Contact</Link>
+                            <Link className="nav-link mx-4" href="#">Contact</Link>
                         </li>
                     </ul>
 
 
                     <ul className="navbar-nav ml-auto">
-                        <li className="nav-item">
-                            <Link className="nav-link " style={{ color: 'white' }} href="#"><i onMouseOut={changeColorOut} onMouseOver={changeColorOver} className="fa-brands fa-linkedin-in fa-beat-fade fa-xl"></i></Link>
+                        <li className="nav-item ml-auto">
+                            <Link className="nav-link mx-4" target="_blank" style={{ color: 'white' }} to="https://www.linkedin.com/in/adi2/"><i onMouseOut={changeColorOut} onMouseOver={changeColorOver} className="fa-brands fa-linkedin-in fa-beat-fade fa-xl"></i></Link>
                         </li>
-                        <li className="nav-item">
-                            <Link className="nav-link " style={{ color: 'white' }}
-                                href="#"><i onMouseOut={changeColorOut} onMouseOver={changeColorOver} className="fa-brands fa-github fa-beat-fade"></i></Link>
+                        <li className="nav-item ml-auto">
+                            <Link className="nav-link mx-4" target="_blank" style={{ color: 'white' }}
+                                to="https://github.com/Adi2895"><i onMouseOut={changeColorOut} onMouseOver={changeColorOver} className="fa-brands fa-github fa-beat-fade fa-xl"></i></Link>
                         </li>
                     </ul>
-
                 </div>
             </nav>
-
-
         </>
     )
 }

@@ -5,12 +5,12 @@ import React from 'react'
 export default function Home() {
     return (
         <>
-        <div className="row">
-        <div className="container col-md-6" style={{marginTop:260, marginLeft:100}}>
+        {/* <div className="row"> */}
+        <div className="container " style={{marginTop:200, marginBottom:50}}>
             <div className="conatiner" >
-                <h1 className='myName' style={{fontSize:60}}>Hii, there <br></br>I am Aditya</h1>
-                <h1 style={{fontSize:60 , fontFamily:'Alkatra'}}>Front End Web Developer </h1>
-                <p style={{fontSize:25, textAlign:"left"}}>
+                <h1 className='myName' style={{fontSize:"3.8rem"}}>  <span className="hii"> Hii</span>, there <br></br>I am Aditya</h1>
+                <h1 style={{fontSize:"3.8rem" , fontFamily:'Alkatra'}}>Front End Web Developer </h1>
+                <p className='container' style={{fontSize:"1.4rem", textAlign:"left"}}>
                     I am a tech enthusiast and daily learner.
                     I am very passionate towards my work and work with my 100% 
                     of potential.
@@ -18,9 +18,9 @@ export default function Home() {
             </div>
 
         </div>
-        </div>
+        {/* </div> */}
 
-        <hr style={{border: "dotted 6px #000", width:"10%", borderTop:"none", margin:"30px auto"}}/>
+        <hr style={{ border: "dotted 6px rgb(253, 230, 230)", width:"10%", borderTop:"none", margin:"150px auto", }}/>
         </>
     )
 }
