@@ -34,7 +34,7 @@ export default function footer() {
 
                     <h4 style={{ color: "white", fontSize: "0.9rem", letterSpacing: "4px", paddingTop: "20px" }} className="footer-text">
                         ©<span id="date">2023</span>
-                        <span className="company"><Link to= "/" style={{ textDecoration: "none" }} target="_blank"> ADITYLink </Link></span>
+                        <span className="company"><Link to= "/" style={{ textDecoration: "none" }} target="_blank"> ADITYA </Link></span>
                         ALL RIGHTS RESERVED
                     </h4>
                 </div>

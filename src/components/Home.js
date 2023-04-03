@@ -3,9 +3,10 @@
 import React from 'react'
 
 export default function Home() {
+    
     return (
         <>
-        {/* <div className="row"> */}
+        <section >
         <div className="container " style={{marginTop:200, marginBottom:50}}>
             <div className="conatiner" >
                 <h1 className='myName' style={{fontSize:"3.8rem"}}>  <span className="hii"> Hii</span>, there <br></br>I am Aditya</h1>
@@ -21,6 +22,7 @@ export default function Home() {
         {/* </div> */}
 
         <hr style={{ border: "dotted 6px rgb(253, 230, 230)", width:"10%", borderTop:"none", margin:"150px auto", }}/>
+        </section>
         </>
     )
 }

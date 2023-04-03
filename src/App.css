@@ -34,13 +34,19 @@ p{
 }
 
 
+.sensitive{
+  transition: all .3s ease-in-out;
+}
+
+.sensitive:hover{
+  transform: scale(1.2);
+}
+
 .grow{
   transition: all .2s ease-in-out;
 }
 
 .grow:hover{
-  /* background-color: black;
-  color: white; */
   transform: scale(1.2);
 }
 

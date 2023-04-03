@@ -1,8 +1,12 @@
-import React from 'react'
+import React,{useRef} from 'react'
 
-export default function Tech() {
+export default function Tech(props) {
+    const ref = useRef(null);
+    
     return (
         <>
+
+        <section ref ={props.tech}>
         <div className='container' >
             <h1 className="my-4" style={{ fontSize: "3rem", fontFamily:"Alkatra" }}>Technologies</h1>
             <p className='container' style={{ fontSize: "1.4rem", textAlign:"left", marginBottom:"40px" }}>
@@ -62,6 +66,7 @@ export default function Tech() {
                 </div>
             </div>
             <hr style={{ border: "dotted 6px rgb(253, 230, 230)", width:"10%", borderTop:"none", margin:"150px auto", }}/>
+            </section>
         </>
     )
 }
