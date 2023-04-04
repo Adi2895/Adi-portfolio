@@ -27,7 +27,7 @@ export default function Navbar(props) {
                             <NavLink onClick={props.homeHandle} className="nav-link mx-3" to="/">Home</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink onClick={props.techHandle} className="nav-link mx-3" to="/" >Tech</NavLink>
+                            <NavLink onClick={props.techHandle} className="nav-link mx-3" to="/" >Technology</NavLink>
                         </li>
                         <li className="nav-item">
                             <NavLink onClick={props.contactHandle} className="nav-link mx-3" to="/" >Contact</NavLink>
