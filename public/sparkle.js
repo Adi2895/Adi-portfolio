@@ -13,7 +13,7 @@ const mouse = {
 canvas.addEventListener('mousemove', function(event){
     mouse.x = event.x;
     mouse.y = event.y;
-    for(let i = 0; i < 3; i++) {
+    for(let i = 0; i < 2; i++) {
         spots.push(new particle());
     }
 });
@@ -22,9 +22,9 @@ class particle{
     constructor(){
         this.x = mouse.x;
         this.y = mouse.y;
-        this.size = Math.random() * 2 + 0.1;
-        this.speedX = Math.random() * 2 - 1;
-        this.speedY = Math.random() * 2 - 1;
+        this.size = Math.random() * 2 + 0.2;
+        this.speedX = Math.random() * 3 - 1;
+        this.speedY = Math.random() * 3 - 1;
         this.color = 'hsl(' + hue + ', 100%, 50%)';
 
     }
@@ -32,7 +32,7 @@ class particle{
     update(){
         this.x += this.speedX;
         this.x += this.speedY;
-        if(this.size > 0.1) this.size -= 0.03;
+        if(this.size > 0.2) this.size -= 0.03;
     }
 
     draw(){
@@ -51,7 +51,7 @@ function handleParticle(){
         spots[i].draw();
         for(let j = 0; j < spots.length; j++) {
             const dx = spots[i].x - spots[j].x;
-            const dy = spots[i].y - spots[j].y;
+            const dy = spots[i].y + spots[j].y;
             const distance = Math.sqrt(dx * dx + dy);
             if(distance< 90) {
                 ctx.beginPath();

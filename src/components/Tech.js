@@ -1,8 +1,8 @@
-import React,{useRef} from 'react'
+import React from 'react'
 
 export default function Tech(props) {
-    const ref = useRef(null);
     
+
     return (
         <>
 

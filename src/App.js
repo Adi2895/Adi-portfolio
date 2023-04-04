@@ -1,6 +1,6 @@
 
 import './App.css';
-import React, { useRef, useEffect } from 'react'
+import React, { useRef } from 'react'
 import { BrowserRouter as Router} from 'react-router-dom'
 import Navbar from './components/Navbar';
 import Home from './components/Home';
@@ -11,7 +11,6 @@ function App() {
 
   const tech = useRef(null);
   const contact = useRef(null); 
-  const home = useRef(null);
 
 
   const homeHandle=()=>{
@@ -19,12 +18,12 @@ function App() {
   }
 
   const techHandle=()=>{
-    tech.current?.scrollIntoView({top:1, behavior:'smooth'});
+    tech.current?.scrollIntoView({behavior:'smooth'});
   }
 
   const contactHandle = ()=>{
 
-    contact.current?.scrollIntoView({top:3, behavior:'smooth'});
+    contact.current?.scrollIntoView({behavior:'smooth'});
     
     }
 

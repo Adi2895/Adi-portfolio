@@ -121,3 +121,7 @@ p{
     font-size:1.2rem !important
   }
 }
+#canvas{
+  position:absolute;
+  z-index: -99;
+}

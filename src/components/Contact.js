@@ -1,10 +1,10 @@
-import React, { useRef, useState } from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 export default function Contact(props) {
 
     const [formsubmit, setFormsubmit] = useState(null);
-    const ref = useRef(null);
+    
     const formSubmitted = ()=>{
         setFormsubmit("Thanks...🥰 We will contact you soon!");
         setTimeout(()=>{
@@ -100,7 +100,7 @@ export default function Contact(props) {
                     <h4 style={{color:"white", paddingLeft:"35%", fontFamily:"'Cataraman, cursive'"}} className='mx-auto'>{formsubmit}</h4>
                     <div className="container mx-auto" style={{paddingLeft:"50%"}}>
                     <button onClick={goToTop} style={{fontFamily:"'Cataraman, cursive'", }} className=' btn btn-dark mx-auto rounded-circle '>
-                    <i class="fa-solid fa-arrow-up fa-xl" style={{color: "#45eff2"}}></i>
+                    <i className="fa-solid fa-arrow-up fa-xl" style={{color: "#45eff2"}}></i>
                     </button>
                     </div>
                 </div>

@@ -19,7 +19,6 @@ export default function Home() {
             </div>
 
         </div>
-        {/* </div> */}
 
         <hr style={{ border: "dotted 6px rgb(253, 230, 230)", width:"10%", borderTop:"none", margin:"150px auto", }}/>
         </section>
