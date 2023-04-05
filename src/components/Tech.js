@@ -6,8 +6,8 @@ export default function Tech(props) {
     return (
         <>
 
-        <section ref ={props.tech}>
-        <div className='container' >
+        
+        <div ref ={props.tech} className='container unclickable' >
             <h1 className="my-4" style={{ fontSize: "3rem", fontFamily:"Alkatra" }}>Technologies</h1>
             <p className='container' style={{ fontSize: "1.4rem", textAlign:"left", marginBottom:"40px" }}>
                 My tech stack is MERN Stack. I am proficient in HTML/CSS as well. If We talk about Backend-part 
@@ -66,7 +66,7 @@ export default function Tech(props) {
                 </div>
             </div>
             <hr style={{ border: "dotted 6px rgb(253, 230, 230)", width:"10%", borderTop:"none", margin:"150px auto", }}/>
-            </section>
+            
         </>
     )
 }

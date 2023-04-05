@@ -123,5 +123,13 @@ p{
 }
 #canvas{
   position:absolute;
-  z-index: -99;
+  z-index: 0; 
+ }
+
+.clickable{
+  z-index: 10;
+}
+
+.unclickable{
+  z-index: -10;
 }

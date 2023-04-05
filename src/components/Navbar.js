@@ -16,7 +16,7 @@ export default function Navbar(props) {
         <>
             
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-                <NavLink onClick={props.handleClick} className="navbar-brand mx-3" href="/">Aditya</NavLink>
+                <NavLink onClick={props.handleClick} className="navbar-brand mx-3" href="/">Aditya Jangra</NavLink>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
