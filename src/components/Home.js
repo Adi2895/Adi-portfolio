@@ -13,8 +13,7 @@ export default function Home() {
                 <h1 style={{fontSize:"3.8rem" , fontFamily:'Alkatra'}}>Front End Web Developer </h1>
                 <p className='container content-justify' style={{fontSize:"1.4rem", textAlign:"left" }}>
                     I am a tech enthusiast and daily learner.
-                    I am very passionate towards my work and work with my 100% 
-                    of potential.
+                    I am passionate about coding and have a keen learner in the tech world which triggers me to give my 100% in my work.
                 </p>
             </div>
 
