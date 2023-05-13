@@ -21,7 +21,7 @@ export default function Tech(props) {
 
             <div className="container row mx-auto" >
                 {/* ist */}
-                <div className="col-sm-6 col-md-6 col-lg-4 my-3 grow">
+                <div className="col-sm-12 col-md-6 col-lg-4 my-3 grow">
                     <div className="card" style={{width: "16rem", height:"12rem"}}>
                         <div className="card-body mx-auto">
                             <h5 style={{color:"#72acbe"}} className="card-title"> <span><i  className="fa-brands fa-react fa-spin fa-xl"></i></span> Front-End</h5>
@@ -38,7 +38,7 @@ export default function Tech(props) {
 
                 {/* 2nd  */}
 
-                <div className="col-sm-6 col-md-6 col-lg-4 my-3 grow">
+                <div className="col-sm-12 col-md-6 col-lg-4 my-3 grow">
                     <div className="card" style={{width: "16rem",height:"12rem"}}>
                         <div className="card-body mx-auto">
                             <h5 style={{color:"#72acbe"}} className="card-title"> <span><i className="fa-brands fa-dev fa-beat-fade fa-xl"></i></span> Backend-End</h5>
@@ -54,7 +54,7 @@ export default function Tech(props) {
                 {/* 3rd */}
 
 
-                <div className="col-sm-6 col-md-6 col-lg-4 my-3 grow">
+                <div className="col-sm-12 col-md-6 col-lg-4 my-3 grow">
                     <div className="card" style={{width: "16rem", height:"12rem"}}>
                         <div className="card-body mx-auto">
                             <h5 style={{color:"#72acbe"}} className="card-title"> <span><i className="fa-solid fa-database fa-beat-fade fa-xl"></i></span> DataBases</h5>
