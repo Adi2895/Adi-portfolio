@@ -38,8 +38,11 @@ export default function Contact(props) {
 
                 <div className="container ">
                     <div className="row mx-auto">
+
+                    {/* Social media icons */}
+
                     <div className="col-12 col-md-5 mx-2">
-                        <div className="container " style={{ textAlign: "center", marginBottom: "70px", backgroundColor: "#110a0a", borderRadius: "10px", height: "90px", paddingTop: "15px" }}>
+                        <div className="container container-social" style={{ textAlign: "center", marginBottom: "70px", backgroundColor: "#110a0a", borderRadius: "10px", height: "90px", paddingTop: "15px" }}>
                             <h4 style={{ color: "white", marginBottom: "3px" }}> <span><i className="fa-solid fa-comment-sms fa-beat fa-xl" style={{ color: "#20df69", padding: "5px" }}></i> </span> Email ID </h4>
                             <div className="container sensitive" >
                                 <Link className='clickable' style={{ textDecoration: "none", color: "blue" }} to="mailto:jangraaditya11@gmail.com?subject=What's your subject User?">jangraaditya11@gmail.com</Link>
@@ -48,7 +51,7 @@ export default function Contact(props) {
 
 
 
-                        <div className="container" style={{ textAlign: "center", marginBottom: "70px", backgroundColor: "#110a0a", borderRadius: "10px", height: "90px", paddingTop: "15px" }}>
+                        <div className="container container-social" style={{ textAlign: "center", marginBottom: "70px", backgroundColor: "#110a0a", borderRadius: "10px", height: "90px", paddingTop: "15px" }}>
                             <h4 style={{ color: "white", marginBottom: "2px" }}> <span><i className="fa-brands fa-whatsapp fa-beat-fade fa-xl" style={{ color: "#20df69" }}></i></span> Whatsapp NO: </h4>
                             <div className="container sensitive">
                                 <Link className='clickable'  style={{ textDecoration: "none" }} target='_blank' to="https://api.whatsapp.com/send?phone=8950620400">Click me → 8950620400</Link>
