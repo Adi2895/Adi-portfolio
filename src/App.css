@@ -109,9 +109,6 @@ p{
 
 
 @media only screen and (min-width:550px) and (max-width:999px){
-  
-  
-
   h1{
     font-size: 2.8rem !important;
         
@@ -132,4 +129,13 @@ p{
 
 .unclickable{
   z-index: -10;
+}
+
+
+
+/* fix the width of contact social container */
+@media only screen and (min-width:768px) and (max-width:990px ){
+    .container-social{
+        width: 13.9rem;
+    }
 }
