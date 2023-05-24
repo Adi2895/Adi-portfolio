@@ -54,7 +54,8 @@ export default function Contact(props) {
                         <div className="container container-social" style={{ textAlign: "center", marginBottom: "70px", backgroundColor: "#110a0a", borderRadius: "10px", height: "90px", paddingTop: "15px" }}>
                             <h4 style={{ color: "white", marginBottom: "2px" }}> <span><i className="fa-brands fa-whatsapp fa-beat-fade fa-xl" style={{ color: "#20df69" }}></i></span> Whatsapp NO: </h4>
                             <div className="container sensitive">
-                                <Link className='clickable'  style={{ textDecoration: "none" }} target='_blank' to="https://api.whatsapp.com/send?phone=8950620400">Click me → 8950620400</Link>
+                                {/* <Link className='clickable'  style={{ textDecoration: "none" }} target='_blank' to="https://api.whatsapp.com/send?phone=8950620400">Click me → 8950620400</Link> */}
+                                <Link className='clickable'  style={{ textDecoration: "none" }} target='_blank' to="https://wa.me/+918950620400">Click me → 8950620400</Link>
                             </div>
                         </div>
 
