@@ -9,7 +9,7 @@ export default function Home() {
         <section >
         <div className="container " style={{marginTop:200, marginBottom:50}}>
             <div className="conatiner" >
-                <h1 className='myName' style={{fontSize:"3.8rem"}}>  <span className="hii"> Hii</span>, there <br></br>I am Aditya</h1>
+                <h1 className='myName' style={{fontSize:"3.8rem"}}>  <span className="hii"> Hii, there <br></br>I am Aditya </span></h1>
                 <h1 style={{fontSize:"3.8rem" , fontFamily:'Alkatra'}}>Full stack Web Developer </h1>
                 <p className='container content-justify' style={{fontSize:"1.4rem", textAlign:"left" }}>
                 I'm a tech enthusiast with a strong passion for coding. I find great joy and fulfillment in
