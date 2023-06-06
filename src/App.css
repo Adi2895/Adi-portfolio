@@ -30,7 +30,8 @@ p{
 .hii{
   outline : none;
   -webkit-box-reflect: below 1px linear-gradient(transparent,#0008);
-  animation : animate 5s linear infinite;
+  /*  */
+  animation : animate 3s linear infinite;
 }
 
 
@@ -55,14 +56,16 @@ p{
 @keyframes animate {
   0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92%
   {
-    color:#0e3742;
+    /* color:#0e3742; */
+    color:rgb(43, 83, 112);
     text-shadow:none;
   }
 
   18.1%, 20.1%, 30%, 50%, 60.1%, 80.1%, 90%, 92.1%, 100%
   {
     color: #fff;
-    text-shadow: 0 0 10px #03bcf4,
+    text-shadow: 0 0 10px #03bcf4 ,
+    /* */
     0 0 20px #03bcf4
     0 0 40px #03bcf4
     0 0 80px #03bcf4
@@ -73,7 +76,7 @@ p{
 .myName {
 
   font-family:'Alkatra', cursive;
-  animation-duration: 4s;
+  animation-duration: 3s;
   animation-name: slidein;
   animation-iteration-count: infinite;
 }
