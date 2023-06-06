@@ -10,18 +10,54 @@ export default function Tech(props) {
         <div ref ={props.tech} className='container unclickable' >
             <h1 className="my-4" style={{ fontSize: "3rem", fontFamily:"Alkatra" }}>Technologies</h1>
             <p className='container' style={{ fontSize: "1.4rem", textAlign:"left", marginBottom:"40px" }}>
-                My tech stack is MERN Stack. I am proficient in HTML/CSS as well. If We talk about Backend-part 
-                I use Node.js, Express.js and for front end-part I use React.js. Additionally I use Bootstrap 
-                framework.In databases I am good at MongoDB.
-                I also love to solve data structure and algorithimic 
-                problems because they involves logic and usually take part in coding contest.
+            In my tech section, I proudly showcase my proficiency in the
+             MERN stack. As a full-stack developer, 
+             I have expertise in both front-end and back-end technologies.
+             <br/>
+             <br/>
+             For front-end development, I rely on the power of React.js, 
+             a popular JavaScript library known for its flexibility and component-based architecture.
+              With React.js, I can create interactive and dynamic user interfaces that
+               provide an exceptional user experience. 
+               To enhance the visual appeal and responsiveness of my 
+               projects, I leverage Bootstrap, a widely-used CSS 
+               framework that simplifies the design process.
+
+             <br/>
+             <br/>
+
+             On the back-end side, I rely on the power of Node.js and Express.js. 
+             These frameworks enable me to build efficient and scalable server-side 
+             applications. Leveraging the event-driven, non-blocking nature of Node.js,
+              I can handle a large number of concurrent requests while ensuring optimal 
+              performance. Express.js, with its simplicity and robust features, 
+              allows me to create RESTful APIs and handle various backend functionalities with ease.
+
+              <br/>
+             <br/>
+
+             For data storage and management, I rely on MongoDB, a powerful NoSQL database. 
+             MongoDB's flexibility and scalability make it an excellent choice 
+             for handling complex data structures and accommodating future growth. 
+             I can seamlessly interact with MongoDB using Mongoose,
+              an elegant object data modeling library for Node.js.
+
+              <br/>
+             <br/>
+
+             As a developer who loves challenges, I thoroughly enjoy solving data structure 
+             and algorithmic problems. I usually participate in coding contests,
+             where I apply my problem-solving skills to come up with 
+             efficient and elegant solutions. These experiences enhance my
+              analytical thinking and sharpen my ability to tackle complex programming 
+              challenges.
             </p>
         </div>
 
 
             <div className="container row mx-auto" >
                 {/* ist */}
-                <div className="col-sm-12 col-md-6 col-lg-4 my-3 grow">
+                <div className="col-sm-12l-md-6 col-lg-4 my-3 grow">
                     <div className="card" style={{width: "16rem", height:"12rem"}}>
                         <div className="card-body mx-auto">
                             <h5 style={{color:"#72acbe"}} className="card-title"> <span><i  className="fa-brands fa-react fa-spin fa-xl"></i></span> Front-End</h5>
