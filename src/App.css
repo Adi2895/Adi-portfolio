@@ -1,7 +1,7 @@
 
 html, body{
   
-  background-color: rgb(39, 39, 40);
+  background-color: rgb(6, 6, 6);
   
   margin: 0 !important;
   padding: 0 !important;
@@ -15,7 +15,7 @@ h1{
 }
 
 p{
-  color:rgb(189, 184, 184);
+  color:rgb(248, 245, 245);
 }
 
 #canvas{
@@ -27,12 +27,96 @@ p{
 }
 
 
+
+/* home component */
+
+#home{
+  margin-top: 330px;
+  margin-bottom: 355px;
+}
+
 .hii{
   outline : none;
   -webkit-box-reflect: below 1px linear-gradient(transparent,#0008);
-  /*  */
   animation : animate 3s linear infinite;
 }
+
+
+.myName {
+
+  font-size:4rem; 
+  font-family:'Alkatra', cursive;
+  text-align: center;
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes slidein {
+  0% {
+    margin-left: 0%;
+  }
+  50% {
+    margin-left: 70px;
+  }
+  100% {
+    margin-left: 0%;
+  }
+  }
+
+/* home component */
+
+
+
+
+/* intro component */
+
+.myImage{
+  object-fit:cover;
+  object-position: 55%;
+  transform: scale(1) translate(0, 0.5%);
+  height: 15rem;
+  border-radius: 50%;
+}
+
+.description{
+  margin-top: 45px;
+}
+
+/* intro component */
+
+
+
+
+/* tech component */
+
+.frontend-img{
+  width:90%;
+  border-radius:3%;
+}
+
+@media only screen  and (min-width:769px) and (max-width:999px) {
+  .frontend-img{
+    object-fit: cover;
+    height:300px;
+    border-radius: 9%;
+    width:99%
+  }
+}
+  @media only screen and (min-width:1000px)and (max-width:1199px){
+    .frontend-img{
+      border-radius: 6%;
+      margin-top:10px;
+      width:100%;
+      height:300px;
+    }
+    
+  }
+
+
+/* tech component */
+
 
 
 .sensitive{
@@ -73,30 +157,55 @@ p{
   }
 }
 
-.myName {
 
-  font-family:'Alkatra', cursive;
-  animation-duration: 3s;
-  animation-name: slidein;
-  animation-iteration-count: infinite;
+
+
+
+
+/* Contact component*/
+
+.get-in-touch{
+  font-size: "3.8rem";
+  font-family: "Alkatra"
 }
 
-@keyframes slidein {
-0% {
-  margin-left: 0%;
+.container-app-email, .container-app-whatsapp{
+  text-align: center;
+  margin-bottom: 70px;
+  background-color: rgb(23 32 44);
+  border-radius: 10px;
+  height: 90px;
+  padding-top: 15px;
 }
-50% {
-  margin-left: 70px;
+
+.container-for-linkedin{
+  text-align: center;
+  margin-bottom: 70px;
+  background-color: rgb(23 32 44);
+  border-radius: 10px;
+   height: 50px;
+  padding-top: 10px;
 }
-100% {
-  margin-left: 0%;
+
+
+/* fix the width of contact social container */
+@media only screen and (min-width:768px) and (max-width:990px ){
+  .container-app-email, .container-app-whatsapp, .container-for-linkedin{
+      width: 13.9rem;
+  }
 }
-}
+
+/* Contact component */
+
+
+
+
+
 
 @media only screen and (max-width:550px) {
   
   body{
-    /* background-color: aqua; */
+   
     margin:"auto auto";
   }
 
@@ -108,19 +217,35 @@ p{
   p{
     font-size:1rem !important;
   }
+
+  .myImage{
+    margin-left: 155px;
+  }
 }
 
 
 @media only screen and (min-width:550px) and (max-width:999px){
   h1{
-    font-size: 2.8rem !important;
+    font-size: 2.9rem !important;
         
   }
 
   p{
     font-size:1.2rem !important
   }
+
+  .myImage{
+    margin-left: 14px;
+  }
+
+  .description{
+    /* margin-top: 25px; */
+  }
 }
+
+/* canvas */
+
+
 #canvas{
   position:absolute;
   z-index: 0; 
@@ -135,10 +260,5 @@ p{
 }
 
 
+/* canvas */
 
-/* fix the width of contact social container */
-@media only screen and (min-width:768px) and (max-width:990px ){
-    .container-social{
-        width: 13.9rem;
-    }
-}

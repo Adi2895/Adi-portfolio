@@ -14,7 +14,7 @@ export default function footer() {
     return (
         <>
 
-            <div className='' style={{ backgroundColor: "black", paddingTop:"10%", textAlign:"center", height: "300px", display: "block" }} >
+            <div className='' style={{ backgroundColor: "#38344342", paddingTop:"10%", textAlign:"center", height: "300px", display: "block" }} >
 
                 <div className="social-icons" >
 

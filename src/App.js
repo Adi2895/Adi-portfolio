@@ -7,6 +7,7 @@ import Home from './components/Home';
 import Tech from './components/Tech';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Intro from './components/Intro';
 function App() {
 
   const tech = useRef(null);
@@ -36,6 +37,7 @@ function App() {
       <Navbar homeHandle={homeHandle} 
       contactHandle={contactHandle} techHandle={techHandle}/>
       <Home />
+      <Intro/>
       <Tech tech={tech} />
       <Contact contact={contact} />
       <Footer/>

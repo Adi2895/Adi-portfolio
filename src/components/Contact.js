@@ -5,8 +5,8 @@ export default function Contact(props) {
 
     const [formsubmit, setFormsubmit] = useState(null);
     
-    const formSubmitted = ()=>{
-
+    const formSubmitted = (e)=>{
+        e.preventDefault();
         var empt = document.forms["form1"]["name"]["email"]["aboutProject"].value;
         if(empt == ""){
             alert("Please fill the form completely");
@@ -33,7 +33,7 @@ export default function Contact(props) {
             <section ref={props.contact}>
             <div style={{ marginBottom: "100px" }}>
                 <div className='container' style={{ marginBottom: "80px" }}>
-                    <h1 className='mx-auto' style={{ fontSize: "3.8rem", fontFamily: "Alkatra" }}>Get in touch</h1>
+                    <h1 className='mx-auto get-in-touch' >Get in touch</h1>
                 </div>
 
                 <div className="container ">
@@ -42,8 +42,8 @@ export default function Contact(props) {
                     {/* Social media icons */}
 
                     <div className="col-12 col-md-5 mx-2">
-                        <div className="container container-social" style={{ textAlign: "center", marginBottom: "70px", backgroundColor: "#110a0a", borderRadius: "10px", height: "90px", paddingTop: "15px" }}>
-                            <h4 style={{ color: "white", marginBottom: "3px" }}> <span><i className="fa-solid fa-comment-sms fa-beat fa-xl" style={{ color: "#20df69", padding: "5px" }}></i> </span> Email ID </h4>
+                        <div className="container container-app-email" >
+                            <h4 style={{ color: "white", marginBottom: "3px" }}> <span><i className="fa-solid fa fa-envelope fa-xl" style={{ color: "orange", padding: "5px" }}></i> </span> Email ID </h4>
                             <div className="container sensitive" >
                                 <Link className='clickable' style={{ textDecoration: "none", color: "blue" }} to="mailto:jangraaditya11@gmail.com?subject=What's your subject User?">jangraaditya11@gmail.com</Link>
                             </div>
@@ -51,8 +51,8 @@ export default function Contact(props) {
 
 
 
-                        <div className="container container-social" style={{ textAlign: "center", marginBottom: "70px", backgroundColor: "#110a0a", borderRadius: "10px", height: "90px", paddingTop: "15px" }}>
-                            <h4 style={{ color: "white", marginBottom: "2px" }}> <span><i className="fa-brands fa-whatsapp fa-beat-fade fa-xl" style={{ color: "#20df69" }}></i></span> Whatsapp NO: </h4>
+                        <div className="container container-app-whatsapp">
+                            <h4 style={{ color: "white", marginBottom: "2px" }}> <span><i className="fa-brands fa-whatsapp  fa-xl" style={{ color: "#20df69" }}></i></span> Whatsapp </h4>
                             <div className="container sensitive">
                                 {/* <Link className='clickable'  style={{ textDecoration: "none" }} target='_blank' to="https://api.whatsapp.com/send?phone=8950620400">Click me → 8950620400</Link> */}
                                 <Link className='clickable'  style={{ textDecoration: "none" }} target='_blank' to="https://wa.me/+918950620400">Click me → 8950620400</Link>
@@ -61,9 +61,9 @@ export default function Contact(props) {
 
 
 
-                        <div className="container " style={{ textAlign: "center", marginBottom: "70px", backgroundColor: "#110a0a", borderRadius: "10px", height: "50px", paddingTop: "10px" }}>
+                        <div className="container container-for-linkedin" >
                         <div className="container sensitive">
-                            <Link className='clickable' target="_blank" style={{ color: 'white', textDecoration: "none", fontSize: "20px", marginBottom: "50px" }} to="https://www.linkedin.com/in/adi2/"><i className="fa-brands fa-linkedin-in fa-beat-fade fa-xl mx-2"></i> Linkedin</Link>
+                            <Link className='clickable' target="_blank" style={{ color: 'white', textDecoration: "none", fontSize: "20px", marginBottom: "50px" }} to="https://www.linkedin.com/in/adi2/"><i className="fa-brands fa-linkedin-in fa-xl mx-2" style={{color:"#a3a3e8"}}></i> Linkedin</Link>
                         </div>
                         </div>
 
